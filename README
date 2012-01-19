@@ -1,0 +1,14 @@
+This example illustrates how to set up an extremely simple webapp that uses Spring MVC v3.1.
+
+Check out the project locally, and run:
+mvn jetty:run
+
+-or-
+
+Check out the project locally, and run:
+mvn eclipse:clean eclipse:eclipse -DdownloadSources
+Then attach the project to a server instance in Eclipse and run it.
+
+The application will start. Navigate to the following URLs:
+http://localhost:8080/example-spring-mvc-app/example/foo
+http://localhost:8080/example-spring-mvc-app/example/bar
