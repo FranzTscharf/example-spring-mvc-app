@@ -4,15 +4,28 @@ import java.util.Date;
 
 public class Person {
 
-	private String name;
+	private String first;
+	private String last;
 	private Date dateOfBirth;
 
-	public String getName() {
-		return name;
+	public String getFirst() {
+		return first;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFirst(String first) {
+		this.first = first;
+	}
+
+	public String getLast() {
+		return last;
+	}
+
+	public void setLast(String last) {
+		this.last = last;
+	}
+
+	public String getFull() {
+		return first + " " + last;
 	}
 
 	public Date getDateOfBirth() {

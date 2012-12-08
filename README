@@ -10,5 +10,7 @@ mvn eclipse:clean eclipse:eclipse -DdownloadSources
 Then attach the project to a server instance in Eclipse and run it.
 
 The application will start. Navigate to the following URLs:
-http://localhost:8080/example-spring-mvc-app/example/foo
-http://localhost:8080/example-spring-mvc-app/example/bar
+http://localhost:8080/example-spring-mvc-app/person
+
+Original from:
+https://github.com/pdunnavant/example-spring-mvc-app
