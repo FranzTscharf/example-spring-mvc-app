@@ -19,7 +19,7 @@ public class ExampleController extends HttpServlet {
 
 	private static final long serialVersionUID = -7194019126118562416L;
 
-	@RequestMapping(value = "/person/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/person", method = RequestMethod.GET)
 	public String person(Model model, @PathVariable String id) throws Exception {
 		Person person = new Person();
 		person.setFirst("Bob");
