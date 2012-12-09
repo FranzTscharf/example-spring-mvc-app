@@ -30,4 +30,9 @@ public class ExampleController extends HttpServlet {
 
 		return "show_person";
 	}
+	
+	@RequestMapping(value = "/about", method = RequestMethod.GET)
+	public String about(Model model) throws Exception {
+		return "about";
+	}	
 }

@@ -26,6 +26,9 @@ public class WebInitializer implements WebApplicationInitializer {
 		AnnotationConfigWebApplicationContext dispatcherContext = new AnnotationConfigWebApplicationContext();
 		dispatcherContext.register(WebConfig.class);
 
+		servletContext.addFilter("Sitemesh ViewFilter", com.opensymphony.sitemesh.webapp.SiteMeshFilter.class).addMappingForUrlPatterns(null, false, "/*");
+		 		
+		
 		ServletRegistration.Dynamic dispatcher = servletContext.addServlet(
 				"dispatcher", new DispatcherServlet(dispatcherContext));
 		dispatcher.setLoadOnStartup(1);
